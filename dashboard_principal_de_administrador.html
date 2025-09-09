@@ -1,0 +1,169 @@
+<html><head>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<meta charset="utf-8"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --primary-color: #1173d4;
+        --secondary-color: #4E545C;
+        --background-color: #000401;
+        --surface-color: #111a22;
+        --text-color: #FFFFFF;
+        --text-muted-color: #8D9797;
+      }
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-[var(--background-color)]">
+<div class="relative flex size-full min-h-screen flex-col justify-between group/design-root overflow-x-hidden text-[var(--text-color)]" style='font-family: Inter, "Noto Sans", sans-serif;'>
+<div class="flex-grow">
+<header class="bg-[var(--background-color)] p-4">
+<div class="flex items-center justify-between">
+<div class="w-12"></div>
+<h1 class="text-xl font-bold">Dashboard</h1>
+<button class="relative rounded-full p-2 hover:bg-white/10">
+<span class="material-symbols-outlined">notifications</span>
+<span class="absolute top-1 right-1 block h-2 w-2 rounded-full bg-red-500"></span>
+</button>
+</div>
+</header>
+<main class="p-4 space-y-6">
+<div>
+<h2 class="text-lg font-semibold text-[var(--text-muted-color)] mb-4">Indicadores Clave</h2>
+<div class="grid grid-cols-2 gap-4">
+<div class="flex flex-col gap-2 rounded-xl bg-[var(--surface-color)] p-4">
+<p class="text-sm font-medium text-[var(--text-muted-color)]">Oportunidades Abiertas</p>
+<p class="text-3xl font-bold">12</p>
+</div>
+<div class="flex flex-col gap-2 rounded-xl bg-[var(--surface-color)] p-4">
+<p class="text-sm font-medium text-[var(--text-muted-color)]">Apartamentos</p>
+<p class="text-3xl font-bold">250</p>
+</div>
+</div>
+</div>
+<div>
+<h2 class="text-lg font-semibold text-[var(--text-muted-color)] mb-4">Matriz de Oportunidades</h2>
+<div class="relative mb-4">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[var(--text-muted-color)]">search</span>
+<input class="form-input w-full rounded-full bg-[var(--surface-color)] border-none pl-10 pr-4 py-3 text-white placeholder:text-[var(--text-muted-color)] focus:ring-2 focus:ring-[var(--primary-color)]" placeholder="Buscar propiedad o unidad" type="search" value=""/>
+</div>
+<div class="flex gap-2 mb-4 overflow-x-auto pb-2">
+<button class="flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium bg-[var(--surface-color)] hover:bg-[var(--secondary-color)]">
+<span class="h-3 w-3 rounded-full bg-red-500"></span>
+                Rojo
+              </button>
+<button class="flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium bg-[var(--surface-color)] hover:bg-[var(--secondary-color)]">
+<span class="h-3 w-3 rounded-full bg-yellow-500"></span>
+                Amarillo
+              </button>
+<button class="flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium bg-[var(--surface-color)] hover:bg-[var(--secondary-color)]">
+<span class="h-3 w-3 rounded-full border border-white/50"></span>
+                Sin color
+              </button>
+</div>
+<div class="flex gap-2 overflow-x-auto pb-2">
+<button class="rounded-full px-4 py-2 text-sm font-medium bg-[var(--surface-color)] hover:bg-[var(--secondary-color)]">
+                Pendientes
+              </button>
+<button class="rounded-full px-4 py-2 text-sm font-medium bg-[var(--surface-color)] hover:bg-[var(--secondary-color)]">
+                Mantenimiento
+              </button>
+</div>
+</div>
+<div class="bg-[var(--surface-color)] rounded-xl p-4">
+<div class="flex items-center justify-between mb-4">
+<button class="rounded-full p-2 hover:bg-white/10">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<p class="text-base font-bold">Julio 2024</p>
+<button class="rounded-full p-2 hover:bg-white/10">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+<div class="grid grid-cols-7 text-center text-xs font-bold text-[var(--text-muted-color)]">
+<p class="py-2">D</p>
+<p class="py-2">L</p>
+<p class="py-2">M</p>
+<p class="py-2">M</p>
+<p class="py-2">J</p>
+<p class="py-2">V</p>
+<p class="py-2">S</p>
+</div>
+<div class="grid grid-cols-7 text-center text-sm">
+<p class="py-2 text-gray-500">30</p>
+<p class="py-2">1</p>
+<p class="py-2">2</p>
+<p class="py-2">3</p>
+<p class="py-2">4</p>
+<p class="py-2 relative"><span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-[var(--primary-color)] text-white rounded-full flex items-center justify-center">5</span></p>
+<p class="py-2">6</p>
+<p class="py-2">7</p>
+<p class="py-2">8</p>
+<p class="py-2">9</p>
+<p class="py-2">10</p>
+<p class="py-2 relative">11<span class="absolute bottom-1 left-1/2 -translate-x-1/2 h-1 w-1 bg-red-500 rounded-full"></span></p>
+<p class="py-2">12</p>
+<p class="py-2">13</p>
+<p class="py-2">14</p>
+<p class="py-2">15</p>
+<p class="py-2">16</p>
+<p class="py-2">17</p>
+<p class="py-2">18</p>
+<p class="py-2">19</p>
+<p class="py-2">20</p>
+<p class="py-2 relative">21<span class="absolute bottom-1 left-1/2 -translate-x-1/2 h-1 w-1 bg-yellow-500 rounded-full"></span></p>
+<p class="py-2">22</p>
+<p class="py-2">23</p>
+<p class="py-2">24</p>
+<p class="py-2">25</p>
+<p class="py-2">26</p>
+<p class="py-2">27</p>
+<p class="py-2">28</p>
+<p class="py-2">29</p>
+<p class="py-2">30</p>
+<p class="py-2">31</p>
+<p class="py-2 text-gray-500">1</p>
+<p class="py-2 text-gray-500">2</p>
+<p class="py-2 text-gray-500">3</p>
+</div>
+</div>
+</main>
+</div>
+<footer class="sticky bottom-0 bg-[var(--surface-color)] pb-safe">
+<nav class="flex justify-around items-center h-16 border-t border-[var(--secondary-color)]">
+<a class="flex flex-col items-center justify-center gap-1 text-[var(--primary-color)]" href="#">
+<span class="material-symbols-outlined">home</span>
+<p class="text-xs font-medium">Dashboard</p>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-[var(--text-muted-color)]" href="#">
+<span class="material-symbols-outlined">search</span>
+<p class="text-xs font-medium">Oportunidades</p>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-[var(--text-muted-color)]" href="#">
+<span class="material-symbols-outlined">construction</span>
+<p class="text-xs font-medium">Mantenimiento</p>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-[var(--text-muted-color)]" href="#">
+<span class="material-symbols-outlined">description</span>
+<p class="text-xs font-medium">Contratos</p>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-[var(--text-muted-color)]" href="#">
+<span class="material-symbols-outlined">chat_bubble</span>
+<p class="text-xs font-medium">Comunicaciones</p>
+</a>
+</nav>
+</footer>
+</div>
+
+</body></html>

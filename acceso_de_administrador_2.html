@@ -1,0 +1,75 @@
+<html><head>
+<meta charset="utf-8"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --c-black: #000401;
+        --c-gray-900: #4e545c;
+        --c-gray-600: #8d9797;
+        --c-white: #ffffff;
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-white">
+<div class="flex min-h-screen flex-col" style='font-family: "Inter", sans-serif;'>
+<div class="flex flex-1 flex-col justify-center px-6 py-12 lg:px-8">
+<div class="sm:mx-auto sm:w-full sm:max-w-sm">
+<svg class="h-10 w-auto text-[var(--c-gray-900)] mx-auto" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 4L4.85289 13.5736C4.31688 13.8416 4 14.3917 4 15V33C4 33.6083 4.31688 34.1584 4.85289 34.4264L24 44L43.1471 34.4264C43.6831 34.1584 44 33.6083 44 33V15C44 14.3917 43.6831 13.8416 43.1471 13.5736L24 4Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"></path>
+<path d="M4 14L24 24L44 14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"></path>
+<path d="M24 44V24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"></path>
+<path d="M34 9L14 19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"></path>
+</svg>
+<h2 class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-[var(--c-black)]">
+            Accede a tu cuenta
+          </h2>
+</div>
+<div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+<form action="#" class="space-y-6" method="POST">
+<div>
+<label class="block text-sm font-medium leading-6 text-[var(--c-gray-900)]" for="email">Email</label>
+<div class="mt-2">
+<input autocomplete="email" class="block w-full rounded-md border-0 py-1.5 text-[var(--c-black)] shadow-sm ring-1 ring-inset ring-[var(--c-gray-600)] placeholder:text-[var(--c-gray-600)] focus:ring-2 focus:ring-inset focus:ring-[var(--c-gray-900)] sm:text-sm sm:leading-6" id="email" name="email" required="" type="email"/>
+</div>
+</div>
+<div>
+<div class="flex items-center justify-between">
+<label class="block text-sm font-medium leading-6 text-[var(--c-gray-900)]" for="password">Contraseña</label>
+<div class="text-sm">
+<a class="font-semibold text-[var(--c-gray-900)] hover:text-[var(--c-black)]" href="#">¿Olvidaste tu contraseña?</a>
+</div>
+</div>
+<div class="mt-2">
+<input autocomplete="current-password" class="block w-full rounded-md border-0 py-1.5 text-[var(--c-black)] shadow-sm ring-1 ring-inset ring-[var(--c-gray-600)] placeholder:text-[var(--c-gray-600)] focus:ring-2 focus:ring-inset focus:ring-[var(--c-gray-900)] sm:text-sm sm:leading-6" id="password" name="password" required="" type="password"/>
+</div>
+</div>
+<div>
+<button class="flex w-full justify-center rounded-md bg-[var(--c-gray-900)] px-3 py-1.5 text-sm font-semibold leading-6 text-[var(--c-white)] shadow-sm hover:bg-[var(--c-black)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--c-gray-900)]" type="submit">
+                Iniciar sesión
+              </button>
+</div>
+</form>
+<p class="mt-10 text-center text-sm text-[var(--c-gray-600)]">¿No eres miembro?</p>
+<div class="mt-4 flex flex-col gap-4 sm:flex-row">
+<button class="flex w-full justify-center rounded-md border border-[var(--c-gray-900)] px-3 py-1.5 text-sm font-semibold leading-6 text-[var(--c-gray-900)] shadow-sm hover:bg-[var(--c-gray-900)]/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--c-gray-900)]">
+              Registrar empresa
+            </button>
+<button class="flex w-full justify-center rounded-md border border-[var(--c-gray-900)] px-3 py-1.5 text-sm font-semibold leading-6 text-[var(--c-gray-900)] shadow-sm hover:bg-[var(--c-gray-900)]/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--c-gray-900)]">
+              Registro personal
+            </button>
+</div>
+</div>
+</div>
+</div>
+
+</body></html>

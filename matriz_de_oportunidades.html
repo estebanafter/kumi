@@ -1,0 +1,116 @@
+<html><head>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<meta charset="utf-8"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --stopped-color: #EF4444;
+        --in-progress-color: #FBBF24;
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body>
+<div class="relative flex size-full min-h-screen flex-col bg-[#000401] dark justify-between group/design-root" style='font-family: Inter, "Noto Sans", sans-serif;'>
+<div class="flex flex-col grow">
+<header class="flex items-center bg-[#000401] p-4 pb-2 justify-between sticky top-0 z-10">
+<button class="text-[#8D9797] flex size-10 shrink-0 items-center justify-center rounded-full hover:bg-[#4E545C]/20 transition-colors" data-icon="ArrowLeft" data-size="24px" data-weight="regular">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z"></path>
+</svg>
+</button>
+<h1 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pr-10">Matriz de Oportunidades</h1>
+</header>
+<div class="p-4 space-y-4">
+<div class="flex gap-3">
+<button class="flex h-10 items-center justify-center gap-x-2 rounded-full bg-[#4E545C] px-4 text-sm font-medium text-white shadow-sm transition-colors hover:bg-opacity-80 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#000401]">
+<span>Detenidas</span>
+<span class="w-2 h-2 rounded-full bg-[var(--stopped-color)]"></span>
+</button>
+<button class="flex h-10 items-center justify-center gap-x-2 rounded-full bg-[#4E545C] px-4 text-sm font-medium text-white shadow-sm transition-colors hover:bg-opacity-80 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#000401]">
+<span>En Progreso</span>
+<span class="w-2 h-2 rounded-full bg-[var(--in-progress-color)]"></span>
+</button>
+</div>
+<div class="space-y-3">
+<div class="flex items-center gap-4 bg-[#4E545C]/20 p-3 rounded-lg border-l-4 border-[var(--stopped-color)]">
+<div class="flex flex-col justify-center flex-1">
+<p class="text-white text-base font-medium leading-normal line-clamp-1">Revisión de contrato de arrendamiento</p>
+<p class="text-[#8D9797] text-sm font-normal leading-normal line-clamp-1">Vencimiento: 25/12/2024</p>
+</div>
+<button class="text-[#8D9797] flex size-8 items-center justify-center rounded-full hover:bg-[#4E545C]/50 transition-colors">
+<svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+<path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"></path>
+</svg>
+</button>
+</div>
+<div class="flex items-center gap-4 bg-[#4E545C]/20 p-3 rounded-lg border-l-4 border-[var(--in-progress-color)]">
+<div class="flex flex-col justify-center flex-1">
+<p class="text-white text-base font-medium leading-normal line-clamp-1">Mantenimiento del ascensor principal</p>
+<p class="text-[#8D9797] text-sm font-normal leading-normal line-clamp-1">Programado para: 15/01/2025</p>
+</div>
+<button class="text-[#8D9797] flex size-8 items-center justify-center rounded-full hover:bg-[#4E545C]/50 transition-colors">
+<svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+<path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"></path>
+</svg>
+</button>
+</div>
+<div class="flex items-center gap-4 bg-[#4E545C]/20 p-3 rounded-lg border-l-4 border-transparent">
+<div class="flex flex-col justify-center flex-1">
+<p class="text-white text-base font-medium leading-normal line-clamp-1">Limpieza de áreas comunes</p>
+<p class="text-[#8D9797] text-sm font-normal leading-normal line-clamp-1">Completada el: 10/12/2024</p>
+</div>
+<button class="text-[#8D9797] flex size-8 items-center justify-center rounded-full hover:bg-[#4E545C]/50 transition-colors">
+<svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+<path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"></path>
+</svg>
+</button>
+</div>
+<div class="flex items-center gap-4 bg-[#4E545C]/20 p-3 rounded-lg border-l-4 border-transparent">
+<div class="flex flex-col justify-center flex-1">
+<p class="text-white text-base font-medium leading-normal line-clamp-1">Nueva tarea: Cotizar seguro</p>
+<p class="text-[#8D9797] text-sm font-normal leading-normal line-clamp-1">Asignada a: Juan Pérez</p>
+</div>
+<button class="text-[#8D9797] flex size-8 items-center justify-center rounded-full hover:bg-[#4E545C]/50 transition-colors">
+<svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+<path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"></path>
+</svg>
+</button>
+</div>
+</div>
+</div>
+</div>
+<nav class="sticky bottom-0 bg-[#000401] border-t border-[#4E545C]/30">
+<div class="flex justify-around items-center px-2 pt-2 pb-4">
+<a class="flex flex-col items-center justify-center gap-1 text-[#8D9797] w-1/5" href="#">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg"><path d="M218.83,103.77l-80-75.48a1.14,1.14,0,0,1-.11-.11,16,16,0,0,0-21.53,0l-.11.11L37.17,103.77A16,16,0,0,0,32,115.55V208a16,16,0,0,0,16,16H96a16,16,0,0,0,16-16V160h32v48a16,16,0,0,0,16,16h48a16,16,0,0,0,16-16V115.55A16,16,0,0,0,218.83,103.77ZM208,208H160V160a16,16,0,0,0-16-16H112a16,16,0,0,0-16,16v48H48V115.55l.11-.1L128,40l79.9,75.43.11.1Z"></path></svg>
+<p class="text-xs font-medium leading-normal tracking-[0.015em]">Dashboard</p>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-white w-1/5 bg-[#4E545C]/30 rounded-full py-2" href="#">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg"><path d="M216,40H136V24a8,8,0,0,0-16,0V40H40A16,16,0,0,0,24,56V176a16,16,0,0,0,16,16H79.36L57.75,219a8,8,0,0,0,12.5,10l29.59-37h56.32l29.59,37a8,8,0,1,0,12.5-10l-21.61-27H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40ZM104,144a8,8,0,0,1-16,0V120a8,8,0,0,1,16,0Zm32,0a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Zm32,0a8,8,0,0,1-16,0V88a8,8,0,0,1,16,0Z"></path></svg>
+<p class="text-xs font-medium leading-normal tracking-[0.015em]">Oportunidades</p>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-[#8D9797] w-1/5" href="#">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg"><path d="M226.76,69a8,8,0,0,0-12.84-2.88l-40.3,37.19-17.23-3.7-3.7-17.23,37.19-40.3A8,8,0,0,0,187,29.24,72,72,0,0,0,88,96,72.34,72.34,0,0,0,94,124.94L33.79,177c-.15.12-.29.26-.43.39a32,32,0,0,0,45.26,45.26c.13-.13.27-.28.39-.42L131.06,162A72,72,0,0,0,232,96,71.56,71.56,0,0,0,226.76,69ZM160,152a56.14,56.14,0,0,1-27.07-7,8,8,0,0,0-9.92,1.77L67.11,211.51a16,16,0,0,1-22.62-22.62L109.18,133a8,8,0,0,0,1.77-9.93,56,56,0,0,1,58.36-82.31l-31.2,33.81a8,8,0,0,0-1.94,7.1L141.83,108a8,8,0,0,0,6.14,6.14l26.35,5.66a8,8,0,0,0,7.1-1.94l33.81-31.2A56.06,56.06,0,0,1,160,152Z"></path></svg>
+<p class="text-xs font-medium leading-normal tracking-[0.015em]">Mantenimiento</p>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-[#8D9797] w-1/5" href="#">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg"><path d="M213.66,82.34l-56-56A8,8,0,0,0,152,24H56A16,16,0,0,0,40,40V216a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V88A8,8,0,0,0,213.66,82.34ZM160,51.31,188.69,80H160ZM200,216H56V40h88V88a8,8,0,0,0,8,8h48V216Z"></path></svg>
+<p class="text-xs font-medium leading-normal tracking-[0.015em]">Contratos</p>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-[#8D9797] w-1/5" href="#">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg"><path d="M140,128a12,12,0,1,1-12-12A12,12,0,0,1,140,128ZM84,116a12,12,0,1,0,12,12A12,12,0,0,0,84,116Zm88,0a12,12,0,1,0,12,12A12,12,0,0,0,172,116Zm60,12A104,104,0,0,1,79.12,219.82L45.07,231.17a16,16,0,0,1-20.24-20.24l11.35-34.05A104,104,0,1,1,232,128Zm-16,0A88,88,0,1,0,51.81,172.06a8,8,0,0,1,.66,6.54L40,216,77.4,203.53a7.85,7.85,0,0,1,2.53-.42,8,8,0,0,1,4,1.08A88,88,0,0,0,216,128Z"></path></svg>
+<p class="text-xs font-medium leading-normal tracking-[0.015em]">Comunicaciones</p>
+</a>
+</div>
+</nav>
+</div>
+
+</body></html>

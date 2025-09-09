@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sanciones y Notificaciones</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+    :root {
+      --primary-color: #8D9797;
+      --secondary-color: #4E545C;
+      --background-color: #000401;
+      --surface-color: #1A1A1A;
+      --text-color: #FFFFFF;
+      --muted-text-color: #8D9797;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--background-color);
+      color: var(--text-color);
+    }
+    .form-input, .form-select, .form-textarea {
+        background-color: var(--surface-color);
+        border-color: var(--secondary-color);
+        color: var(--text-color);
+    }
+    .form-input:focus, .form-select:focus, .form-textarea:focus {
+        --tw-ring-color: var(--primary-color);
+        border-color: var(--primary-color);
+    }
+    .btn-primary {
+        background-color: var(--primary-color);
+        color: var(--background-color);
+        font-weight: 700;
+    }
+    .btn-primary:hover {
+        opacity: 0.9;
+    }
+    .nav-item.active {
+        color: var(--primary-color);
+    }
+    .nav-item.active .material-symbols-outlined {
+      color: var(--primary-color);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-color">
+<div class="flex flex-col min-h-screen">
+<header class="sticky top-0 z-10 bg-background-color/80 backdrop-blur-sm">
+<div class="flex items-center p-4">
+<button class="text-text-color">
+<span class="material-symbols-outlined">arrow_back_ios_new</span>
+</button>
+<h1 class="flex-1 text-center text-xl font-bold">Sanciones y Notificaciones</h1>
+<div class="w-8"></div> 
+</div>
+</header>
+<main class="flex-1 overflow-y-auto p-4 space-y-6">
+<section>
+<h2 class="text-2xl font-bold mb-4">Nueva Sanción</h2>
+<form class="space-y-4">
+<div>
+<label class="block text-sm font-medium text-muted-text-color mb-1" for="sanction-type">Tipo de Sanción</label>
+<div class="relative">
+<select class="form-select w-full appearance-none rounded-lg border-2 border-secondary-color bg-surface-color py-3 pl-4 pr-10 text-text-color focus:border-primary-color focus:ring-primary-color" id="sanction-type">
+<option>Seleccionar</option>
+<option>Ruido excesivo</option>
+<option>Uso indebido de áreas comunes</option>
+<option>Mascotas sin correa</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-muted-text-color pointer-events-none">expand_more</span>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium text-muted-text-color mb-1" for="value">Valor</label>
+<div class="relative">
+<span class="absolute inset-y-0 left-0 flex items-center pl-4 text-muted-text-color">$</span>
+<input class="form-input w-full rounded-lg border-2 border-secondary-color bg-surface-color py-3 pl-8 pr-4 text-text-color focus:border-primary-color focus:ring-primary-color" id="value" placeholder="Ingresar valor" type="number"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium text-muted-text-color mb-1" for="apartment">Apartamento</label>
+<div class="relative">
+<select class="form-select w-full appearance-none rounded-lg border-2 border-secondary-color bg-surface-color py-3 pl-4 pr-10 text-text-color focus:border-primary-color focus:ring-primary-color" id="apartment">
+<option>Seleccionar</option>
+<option>101</option>
+<option>102</option>
+<option>201</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-muted-text-color pointer-events-none">expand_more</span>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium text-muted-text-color mb-1" for="details">Detalles</label>
+<textarea class="form-textarea w-full rounded-lg border-2 border-secondary-color bg-surface-color p-4 text-text-color focus:border-primary-color focus:ring-primary-color" id="details" placeholder="Ingresar detalles de la sanción" rows="4"></textarea>
+</div>
+</form>
+</section>
+<div class="border-t border-secondary-color/50"></div>
+<section>
+<h2 class="text-2xl font-bold mb-4">Generar Documento</h2>
+<form class="space-y-4">
+<div>
+<label class="block text-sm font-medium text-muted-text-color mb-1" for="template">Plantilla</label>
+<div class="relative">
+<select class="form-select w-full appearance-none rounded-lg border-2 border-secondary-color bg-surface-color py-3 pl-4 pr-10 text-text-color focus:border-primary-color focus:ring-primary-color" id="template">
+<option>Seleccionar plantilla</option>
+<option>Notificación Formal</option>
+<option>Acta de Sanción</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-muted-text-color pointer-events-none">expand_more</span>
+</div>
+</div>
+<button class="btn-primary w-full rounded-lg py-3.5 text-base" type="submit">Generar Documento</button>
+</form>
+</section>
+</main>
+<footer class="sticky bottom-0 bg-surface-color border-t border-secondary-color/50">
+<nav class="flex justify-around p-2">
+<a class="nav-item flex flex-col items-center gap-1 text-muted-text-color p-2" href="#">
+<span class="material-symbols-outlined">grid_view</span>
+<span class="text-xs font-medium">Dashboard</span>
+</a>
+<a class="nav-item flex flex-col items-center gap-1 text-muted-text-color p-2" href="#">
+<span class="material-symbols-outlined">search</span>
+<span class="text-xs font-medium">Oportunidades</span>
+</a>
+<a class="nav-item flex flex-col items-center gap-1 text-muted-text-color p-2" href="#">
+<span class="material-symbols-outlined">construction</span>
+<span class="text-xs font-medium">Mantenimiento</span>
+</a>
+<a class="nav-item flex flex-col items-center gap-1 text-muted-text-color p-2" href="#">
+<span class="material-symbols-outlined">description</span>
+<span class="text-xs font-medium">Contratos</span>
+</a>
+<a class="nav-item active flex flex-col items-center gap-1 text-primary-color p-2 rounded-lg bg-primary-color/10" href="#">
+<span class="material-symbols-outlined">mail</span>
+<span class="text-xs font-bold">Comunicaciones</span>
+</a>
+</nav>
+</footer>
+</div>
+
+</body></html>
